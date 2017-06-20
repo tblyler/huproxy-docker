@@ -22,5 +22,4 @@ RUN echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk
 
 EXPOSE 8086
 
-ENTRYPOINT ["./huproxy"]
-CMD ["-listen", ":8086"]
+ENTRYPOINT ["./huproxy", "-listen", ":8086"]
